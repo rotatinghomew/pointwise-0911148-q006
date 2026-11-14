@@ -1749,6 +1749,24 @@
       "revision": 1,
       "status": "active",
       "received_at": "2026-07-11T01:00:00Z"
+    },
+    {
+      "allocation_id": "x0-1",
+      "payment_id": "p0-0",
+      "invoice_id": "i0-1",
+      "amount_cents": 62500,
+      "revision": 2,
+      "status": "reversed",
+      "received_at": "2026-08-01T00:00:00Z"
+    },
+    {
+      "allocation_id": "replacement-first",
+      "payment_id": "p0-0",
+      "invoice_id": "i0-1",
+      "amount_cents": 62500,
+      "revision": 1,
+      "status": "active",
+      "received_at": "2026-08-02T00:00:00Z"
     }
   ],
   "promises": [
@@ -2021,6 +2039,15 @@
       "received_at": "2026-07-01T00:00:00Z",
       "promise_id": "promise-29",
       "revision": 1
+    },
+    {
+      "client": "c0",
+      "amount_cents": 50000,
+      "expected_date": "2026-09-15",
+      "status": "withdrawn",
+      "received_at": "2026-08-03T00:00:00Z",
+      "promise_id": "promise-0",
+      "revision": 2
     }
   ]
 }
