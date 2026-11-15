@@ -23,7 +23,7 @@ class Service:
         dataset = load(self.source)
         require_tables(dataset, TABLES)
         snapshot = visible(dataset, request['as_of'])
-        result = OPERATIONS[operation](snapshot, request.get('options', {}))
+        result = OPERATIONS[operation](snapshot, request.get('options', {}), request['as_of'])
         return self.repository.remember(request['request_id'], request, snapshot, result)
 
     def apply(self, request):
